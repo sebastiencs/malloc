@@ -4,5 +4,5 @@ Malloc implementation using a red-black tree
 
 Define BEST_FIT during compilation to use best-fit algorithm instead of first-fit (file malloc.c)
 
-Can be used with any programs but the ones using their own memory allocator
+Can be used with any programs but the ones using their own memory allocator.
 With some systems, glibc is used, then you have to define in the environment G_SLICE=always-malloc
