@@ -1,8 +1,10 @@
 Malloc
 ======
 
-Malloc / Free / Realloc / Calloc implementation using a red-black tree.
-They change the program's data segment size according to the memory page size.
+malloc(), free(), realloc() and calloc() implementation using a red-black tree.
+malloc() allocates memory from the heap using sbrk(), according to the memory page size.
+The default alignment is 8 and 16 bytes on x86 and x86_64 systems, respectively.
+Mutexes are used to avoid corruption.
 
 Define BEST_FIT during compilation to use best-fit algorithm instead of first-fit (file malloc.c).
 
