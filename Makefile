@@ -5,7 +5,7 @@
 ## Login   <chapui_s@epitech.eu>
 ## 
 ## Started on  Sun Feb 15 19:58:32 2015 chapui_s
-## Last update Sun Feb 15 23:30:33 2015 chapui_s
+## Last update Mon Feb 16 12:17:49 2015 chapui_s
 ##
 
 ifndef HOSTTYPE
@@ -36,11 +36,11 @@ CC		= gcc
 
 RM		= rm -f
 
-all:		$(NAME)
-
 $(NAME):	$(OBJ)
 		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 		ln -fs $(NAME) libmy_malloc.so
+
+all:		$(NAME)
 
 clean:
 		rm -f $(OBJ)
