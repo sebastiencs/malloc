@@ -6,7 +6,7 @@ malloc() allocates memory from the heap using sbrk(), according to the memory pa
 The default alignment is 8 and 16 bytes on x86 and x86_64 systems, respectively.
 Mutexes are used to avoid corruption.
 
-Define BEST_FIT during compilation to use best-fit algorithm instead of first-fit (file malloc.c).
+Define BEST_FIT during compilation to use best-fit algorithm instead of first-fit algorithm (file malloc.c).
 
 Can be used with any programs but the ones using their own memory allocator.
 With some systems and some programs, glibc is used, you have to define in the environment G_SLICE=always-malloc.
